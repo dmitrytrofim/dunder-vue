@@ -1,7 +1,14 @@
 <template>
-  <div>Logo</div>
+  <img class="logo" :src="logoSrc" alt="" />
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import logoSrc from '@/assets/images/svg/logo.svg'
+</script>
 
-<style src="" scoped></style>
+<style scoped>
+.logo {
+  width: 400px;
+  border: 1px solid #000;
+}
+</style>
